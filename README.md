@@ -1,6 +1,6 @@
 # Data_structure_c_programming
 This Project is a self-study practice for myself only.  
-Daily Practice of date structure and algorightmsm.  
+Daily Practice of date structure and algorithms.  
 ** KEEPING DOING, KEEPING PRACTICING**
 # Infos
 This Practice Project is base on book Algorithms in C  
