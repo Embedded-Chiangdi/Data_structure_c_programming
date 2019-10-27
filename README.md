@@ -14,6 +14,6 @@ PART    III cover sorting algorithms
 PART    IV  cover searching algorithms
 This book is intended for anyone conversant with a modern crogramming language and with the basic features of modern computer systems.
 # Programming Language
-The programming language used for all of the implementations is C.
+The programming language used for all of the implementations is C. The strategy that we should use for understanding the program is to implement and test them , to experiment with variants.
 # Author
 Internet and I
