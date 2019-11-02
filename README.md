@@ -17,3 +17,34 @@ This book is intended for anyone conversant with a modern crogramming language a
 The programming language used for all of the implementations is C. The strategy that we should use for understanding the program is to implement and test them , to experiment with variants.
 # Author
 Internet and I
+# Reference
+some online courses   
+## Data Structure and Algorithms of SJTU Youtube
+ [上海交大数据结构](https://www.youtube.com/watch?v=v9MZPZiufYY&list=PLAlPKNKWOG72mXP945jhVFjHsqNQY6OvC)
+ ### Note for this couses
+ 
+ what is it ?   
+## 算法面试通关40讲 Youtube
+ [算法面试通关40讲](https://www.youtube.com/watch?v=DCi_MuwYTok&list=PL6yo_RjsTTYN26BJ0I6rZKjphNLlLwo77)
+ ### Note for this courses
+ #### some basic knowledge
+ Three point to help us master in something.
+ * Chunk it up
+ * Delibrate practicing  
+    ** 坚持 可以练习  
+    ** 练习缺陷 弱点地方  
+    ** 不舒服、不爽、枯燥
+ * Feedback
+ what should we do to preper for data structure ?  
+ * Clarification
+ * Possible Slution: compare(time/space) and optimal(be much stronger)
+ * Coding
+ * test casess
+ #### Algorithm Complexity
+ * 时间复杂度  
+
+ * 空间复杂度
+ #### Data Structure
+
+ #### Algorithm
+ 
