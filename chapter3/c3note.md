@@ -7,8 +7,10 @@
 最基本的数据结构就是数组，一个数组是一组相同类型数据的固定集合。他们的存储空间相邻，可以通过索引访问。
 ## Link
 当我们按照顺序一个一个访问集合中的每个数据项时，可以将数据项组织为链表（LINK LIST）。  
-链表相较于数组的优势在于 **高效重排数据项的能力**  
-### 链表的基本结构
+链表相较于数组的优势在于：  
+* Much more efficient in performing insertions and deletioons.
+* dynamically allocated storage.
+### 单向链表的基本结构
 通常我们使用结构体表示节点，使用指针表示链接：
 ```
 typedef struct node *plink;
@@ -60,13 +62,18 @@ else
 * 测试非空 `if(head->next == end)`
 ### 链表函数接口 API of Link List 
 ```
-void initNodes();
-link newNode(int);
-void freeNode(link);
-void insertNext(link,link);
-link deleteNext(link);
+pList init_link();
+int insert_node_to_link(pList List_head);
+int dele_node_of_link(pList List_head);
+pList add_multi_node_to_link(pList List_head);
+int show_link(pList List_head);
+int clear_link(pList List_head);
+int length_link(pList List_head);
 ```
 ### **拓展**双向链表
+
+### **扩展**循环链表
+
 ### 链表的内存分配
 ## String
 ### 什么是字符串？
