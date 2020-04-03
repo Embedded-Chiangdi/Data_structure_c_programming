@@ -20,14 +20,15 @@ Internet and I
 # Reference
 some online courses   
 ## Data Structure and Algorithms of SJTU Youtube
- [上海交大数据结构](https://www.youtube.com/watch?v=v9MZPZiufYY&list=PLAlPKNKWOG72mXP945jhVFjHsqNQY6OvC)
- ### Note for this couses
- 
- what is it ?   
+[上海交大数据结构](https://www.youtube.com/watch?v=v9MZPZiufYY&list=PLAlPKNKWOG72mXP945jhVFjHsqNQY6OvC)
+### Note for this couses
+what is it ?
+
 ## 算法面试通关40讲 Youtube
  [算法面试通关40讲](https://www.youtube.com/watch?v=DCi_MuwYTok&list=PL6yo_RjsTTYN26BJ0I6rZKjphNLlLwo77)
- ### Note for this courses
- #### some basic knowledge
+### Note for this courses
+
+#### some basic knowledge
  Three point to help us master in something.
  * Chunk it up
  * Delibrate practicing  
