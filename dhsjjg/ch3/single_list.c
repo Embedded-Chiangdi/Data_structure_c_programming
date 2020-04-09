@@ -21,6 +21,7 @@ enum OP{
     op_insertNode,
     op_deletNode,
     op_getLength,
+    op_revert,
     op_max
 };
 
@@ -33,6 +34,7 @@ Status LinkShow(LinkList L);
 Status LinkNodeInsert(LinkList L, int index,int value);
 Status LinkNodeDele(LinkList L, int index);
 Status help();
+Status LinkRevert(LinkList L);
 
 int main(int argc , char **argv[]){
     LinkList pLinkHead;
@@ -78,6 +80,8 @@ int main(int argc , char **argv[]){
             case op_getLength:
                 LinkLength(pLinkHead);
                 break;
+            case op_revert:
+                LinkRevert(pLinkHead);
             default:
                 break;
             }
@@ -263,8 +267,22 @@ Status help(){
 "-4---------insertNode------------\n"
 "-5---------deletNode-------------\n"
 "-6---------getLength-------------\n"
+"-7---------revert----------------\n"
 "Which will you choose："
  );
+}
+Status LinkRevert(LinkList L){
+    LinkList pre=NULL;
+    LinkList current=L->next;
+    LinkList temp=NULL;
+    while(current){
+        temp=current->next;
+        current->next=pre;
+        pre=current;
+        current=temp;
+    }
+    L->next=pre;
+    return OK;
 }
 // typedef int ItemType;
 // typedef struct node{

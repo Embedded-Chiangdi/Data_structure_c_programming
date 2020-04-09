@@ -5,7 +5,7 @@ CC = gcc
 #SRCS := $(wildcard *.c)
 #BINS := $(SRCS:%.c=%)
 BINS=single_list
-
+#BINS=circle_list
 all:$(BINS)
 
 %:%.o
