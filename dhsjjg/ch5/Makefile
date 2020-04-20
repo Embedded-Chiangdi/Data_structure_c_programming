@@ -8,7 +8,7 @@ BINS := $(SRCS:%.c=%)
 all:${BINS}
 %:%.c
 	@echo "compiling..."
-	${CC} $< -o $@
+	${CC} $< -o $@ -g
 clean:
 	@echo "clean ${BINS}"
 	@rm -rf ${BINS}
