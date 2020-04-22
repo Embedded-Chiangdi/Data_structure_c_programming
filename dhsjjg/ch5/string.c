@@ -54,8 +54,10 @@ Status LongestPalindrome(char * s){
     
     if(maxLength > 0){
         printf("find the longest\n");
-        printf("The Longest Palindrome is %d",maxLength);   
-        
+        printf("The Longest Palindrome is %d\n",maxLength);   
+        for(i=start;i<maxLength;i++)
+            putchar(s[i]);
+        putchar('\n');
         return OK;
     }
     printf("There is no Palindrome\n");
@@ -64,10 +66,10 @@ Status LongestPalindrome(char * s){
 Status expandSearch(char *s,int left,int right,int *start,int* maxlen,int length){
 
     while(left >= 0 && right < length  && s[left] == s[right]){
-        putchar(s[left]);
-        putchar('\t');
-        putchar(s[right]);
-        putchar('\t');
+        // putchar(s[left]);
+        // putchar('\t');
+        // putchar(s[right]);
+        // putchar('\t');
         left--;
         right++;
     }
@@ -75,7 +77,7 @@ Status expandSearch(char *s,int left,int right,int *start,int* maxlen,int length
     if(right - left - 1 > (*maxlen)){
         *start=left+1;
         *maxlen=right-left - 1;
-        printf("left =%d right =%d\nmaxlength is %d",left,right,*maxlen);
+        //printf("left =%d right =%d\nmaxlength is %d",left,right,*maxlen);
     }
     return OK;
 }
