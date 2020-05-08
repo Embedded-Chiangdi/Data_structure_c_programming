@@ -24,7 +24,9 @@ void swap(PSortList L,int i,int j);
 
 Status SelectSort(PSortList L);
 Status InsertSort(PSortList L);
+
 Status ShellSort(PSortList L);
+Status ShellSort1(PSortList L);
 
 int main(int argc,char** argv){
     PSortList List;
@@ -32,7 +34,8 @@ int main(int argc,char** argv){
     printf("Before Sort:\t");
     ShowList(List);
     printf("After Sort:\t");
-    ShellSort(List);
+   
+    ShellSort1(List);
     // InsertSort(List);
 
     // SelectSort(List);
@@ -40,7 +43,8 @@ int main(int argc,char** argv){
     // BubleSort1(List);
     // BubleSort2(List);
     // BubleSort3(List);
-     ShowList(List);
+
+    ShowList(List);
 
     return OK;
 }
@@ -139,11 +143,32 @@ Status InsertSort(PSortList L){
 }
 Status ShellSort(PSortList L){
     int i,j,gap;
-    gap=L->length / 2;
-    for(;gap>0;gap=gap/2){
-
-    }
-
-        
+    gap=L->length;
+    do{
+        gap/=2;
+        for(i=1;i+gap <= L->length;i++)
+            if(L->array[i] > L->array[i+gap]){
+                L->array[0]=L->array[i+gap];
+                for(j=i;j>0 && L->array[j] > L->array[0];j-=gap){
+                    L->array[j+gap]=L->array[j];
+                }
+                L->array[j+gap]=L->array[0];
+            }
+    }while(gap>1);
     return OK;
+}
+
+Status ShellSort1(PSortList L){
+    int i, j, gap;
+    gap=L->length;
+    do{
+        gap=gap/2;
+        for(i=gap+1;i<=L->length;i++)
+            if(L->array[i] < L->array[i-gap]){
+                L->array[0]=L->array[i];
+                for(j=i-gap;j>0 && L->array[j] > L->array[0];j-=gap)
+                    L->array[j+gap]=L->array[j];
+                 L->array[j+gap]=L->array[0];    
+            }
+    }while(gap>1);
 }
