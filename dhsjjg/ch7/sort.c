@@ -24,13 +24,16 @@ void swap(PSortList L,int i,int j);
 
 Status SelectSort(PSortList L);
 Status InsertSort(PSortList L);
+Status ShellSort(PSortList L);
+
 int main(int argc,char** argv){
     PSortList List;
     InitList(&List);
     printf("Before Sort:\t");
     ShowList(List);
     printf("After Sort:\t");
-    InsertSort(List);
+    ShellSort(List);
+    // InsertSort(List);
 
     // SelectSort(List);
 
@@ -131,6 +134,16 @@ Status InsertSort(PSortList L){
             }
             L->array[j+1]=L->array[0];
         }
+        
+    return OK;
+}
+Status ShellSort(PSortList L){
+    int i,j,gap;
+    gap=L->length / 2;
+    for(;gap>0;gap=gap/2){
+
+    }
+
         
     return OK;
 }
